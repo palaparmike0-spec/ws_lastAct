@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+h1 { text-align: center; color: #1f3a5f; }
+
+.form-group { margin-bottom: 15px; }
+
+label { display: block; font-weight: bold; margin-bottom: 5px; }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.radio-group { display: flex; gap: 15px; padding: 4px; border: 2px solid transparent; }
+.radio-group label, .checkbox-label { font-weight: normal; display: flex; gap: 5px; }
+
+/* Password show/hide */
+.password-wrapper { display: flex; gap: 8px; }
+.toggle-btn { padding: 0 12px; cursor: pointer; }
+.toggle-btn.active { background: #2f6fed; color: #fff; }
+
+/* Error styling */
+.error { border: 2px solid red !important; background: #fff5f5; }
+.error-message { display: block; color: red; font-size: 13px; }
+
+/* Success message */
+.success {
+  background: #e6f4ea;
+  color: #1e7a3c;
+  border: 2px solid #1e7a3c;
+  padding: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.hidden { display: none; }
+
+/* Buttons */
+.button-row { display: flex; gap: 10px; }
+.btn { flex: 1; padding: 11px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; }
+.btn-primary { background: #2f6fed; color: #fff; }
+.btn-secondary { background: #ddd; }

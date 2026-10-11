@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Registration</h1>
+
+    <!-- Success message -->
+    <div id="successMessage" class="success hidden"></div>
+
+    <form id="registrationForm" novalidate>
+
+      <div class="form-group">
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" data-label="Student ID">
+        <span class="error-message" id="studentIdError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" data-label="Full name">
+        <span class="error-message" id="fullNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" data-label="Email">
+        <span class="error-message" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number (09XXXXXXXXX)</label>
+        <input type="text" id="phone" data-label="Phone number">
+        <span class="error-message" id="phoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" data-label="Date of birth">
+        <span class="error-message" id="dobError"></span>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div id="gender" class="radio-group">
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+        <span class="error-message" id="genderError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="program">Program</label>
+        <select id="program" data-label="Program">
+          <option value="">-- Select Program --</option>
+          <option value="BSIT">BSIT</option>
+          <option value="BSCS">BSCS</option>
+          <option value="BSIS">BSIS</option>
+        </select>
+        <span class="error-message" id="programError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="yearLevel">Year Level</label>
+        <select id="yearLevel" data-label="Year level">
+          <option value="">-- Select Year Level --</option>
+          <option value="1">1st Year</option>
+          <option value="2">2nd Year</option>
+          <option value="3">3rd Year</option>
+          <option value="4">4th Year</option>
+        </select>
+        <span class="error-message" id="yearLevelError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" data-label="Password">
+          <button type="button" class="toggle-btn" data-target="password">Show</button>
+        </div>
+        <span class="error-message" id="passwordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="confirmPassword" data-label="Confirm password">
+          <button type="button" class="toggle-btn" data-target="confirmPassword">Show</button>
+        </div>
+        <span class="error-message" id="confirmPasswordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" rows="3" data-label="Address"></textarea>
+        <span class="error-message" id="addressError"></span>
+      </div>
+
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="agreement"> I agree to the terms and conditions.
+        </label>
+        <span class="error-message" id="agreementError"></span>
+      </div>
+
+      <div class="button-row">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
